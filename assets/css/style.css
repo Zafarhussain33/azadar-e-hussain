@@ -1,0 +1,91 @@
+@import url(../Roboto/Roboto-Regular.ttf);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Tollbar Start */
+
+.tollbar{
+    background-color: #f87307;
+    padding: 10px 0px;
+}
+
+.toolbar-left{
+    display: flex;
+    margin: 0px;
+}
+
+.toolbar-left li{
+    list-style: none;
+    margin: 0px 20px 0px 0px;
+}
+
+.toolbar-left li a{
+    text-decoration: none;
+    color: white;
+}
+
+.toolbar-right-main{
+    justify-content: right;
+}
+
+.toolbar-right{
+    display: flex;
+    margin: 0px;
+}
+
+.toolbar-right li{
+    list-style: none;
+    margin: 0px 20px 0px 0px;
+}
+
+.toolbar-right li a{
+    text-decoration: none;
+    color: white;
+}
+
+.toolbar-right-btn{
+    display: flex;
+    color: white;
+    margin: 0px;
+}
+
+.toolbar-right-btn li{
+    list-style: none;
+    margin: 0px 10px 0px 10px;
+}
+
+.toolbar-right-btn li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Tollbar End */
+
+/* ---------- =================================================================================================== ---------- */
+
+/* Navbar Start */
+
+.navbar-collapse{
+    justify-content: right;
+}
+
+.navbar-nav .nav-item{
+    margin: 0px 0px 0px 30px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: gray;
+    font-size: 17px;
+}
+
+.navbar-nav .nav-item .nav-link span{
+    color: #f87307;
+}
+
+/* Navbar End */
+
+/* ---------- =================================================================================================== ---------- */
