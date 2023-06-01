@@ -124,19 +124,19 @@
                         <a class="nav-link" href="#">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Gallery</a>
+                        <a class="nav-link" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Dua</a>
+                        <a class="nav-link" href="#">Dua</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Surat</a>
+                        <a class="nav-link" href="#">Surats</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Blog</a>
+                        <a class="nav-link" href="#">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Contact</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -144,6 +144,113 @@
     </nav>
 
     <!-- ------ Navbar End ------ -->
+
+    <!-- ---------- =================================================================================================== ---------- -->
+
+    <!-- ------ Header Slider Start ------ -->
+
+    <header>
+        <ul id="slides">
+            <li class="slide slide1 showing">
+                <div class="container z-home-slider">
+                    <div class="row">
+                        <div class="col-lg-8 z-home-slider-left">
+                            <img src="assets/images/home/header-image-1.png" alt="" style="width:80%; height: 30%; text-align: center; justify-content: center; display: flex;">
+                            <h1>
+                                Welcome to Islamic Website Nurturing Faith, Knowledge, and Unity in the Muslim Ummah
+                            </h1>
+                            <p>
+                                He Raised The Sky And Set Up The Balance
+                            </p>
+                            <!-- Link With Blog Page -->
+                            <a href="#">
+                                <button class="z-learn-btn">Read More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slide slide2">
+                <div class="container z-home-slider">
+                    <div class="row">
+                        <div class="col-lg-7 z-home-slider-left">
+                            <h1>
+                                Education is the key to personal and societal growth, and we
+                                strive to provide a platform.
+                            </h1>
+                            <p>
+                                We offer a wide range of educational resources, courses, and
+                                programs <br />
+                                to cater to learners of all ages and backgrounds.
+                            </p>
+                            <!-- Link With Blog Page -->
+                            <a href="#">
+                                <button class="z-learn-btn">Read More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slide slide3">
+                <div class="container z-home-slider">
+                    <div class="row">
+                        <div class="col-lg-8 z-home-slider-left">
+                            <h1>
+                                Education is the passport to the future, for tomorrow
+                                belongs to those who prepare for it today.
+                            </h1>
+                            <p>
+                                Our dedicated team of educators and experts are committed to
+                                creating an inclusive and engaging learning environment
+                            </p>
+                            <!-- Link With Blog Page -->
+                            <a href="#">
+                                <button class="z-learn-btn">Read More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- <button onClick="prevSlide();"><i class="bi bi-arrow-left arrow arrow-next"></i></button>
+                <button onClick="nextSlide();"><i class="bi bi-arrow-right arrow arrow-prev"></i></button> -->
+        </ul>
+    </header>
+
+    <script>
+        var slides = document.querySelectorAll("#slides .slide");
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 6000);
+        var hoverActive = false;
+
+        function nextSlide() {
+            if (!hoverActive) {
+                slides[currentSlide].classList.remove("showing");
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add("showing");
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                slides[currentSlide].classList.remove("showing");
+                currentSlide = (currentSlide - 1) % slides.length;
+                slides[currentSlide].classList.add("showing");
+            }
+        }
+
+        // Stop slide interval on hover
+        slides.forEach(function (slide) {
+            slide.addEventListener("mouseenter", function () {
+                hoverActive = true;
+            });
+
+            slide.addEventListener("mouseleave", function () {
+                hoverActive = false;
+            });
+        });
+    </script>
+
+    <!-- ------ Header Slider End ------ -->
 
     <!-- ---------- =================================================================================================== ---------- -->
 
