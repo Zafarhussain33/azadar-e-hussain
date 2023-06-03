@@ -96,6 +96,10 @@
 
 /* ---------- =================================================================================================== ---------- */
 
+/* ---------- ========== Homepage Start ========== ---------- */
+
+/* ---------- =================================================================================================== ---------- */
+
 /* Header Start */
 
 .headline {
@@ -194,7 +198,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 150px 0px;
+  padding: 150px 0px 0px 0px;
 }
 
 .z-home-slider-left p {
@@ -221,14 +225,19 @@
 }
 
 .z-home-slider-left a .z-learn-btn {
-  border: none;
-  background: linear-gradient(#36a0ad, #91d0a3);
+  border: 1px solid transparent;
+  background: #f87307;
   color: white;
   padding: 10px 40px;
   border-radius: 50px;
   font-family: Arial, Helvetica, sans-serif !important;
   margin: 10px 10px 0px 0px;
   transition: 0.8s ease-in-out;
+}
+
+.z-home-slider-left a .z-learn-btn:hover{
+  background: transparent;
+  border: 1px solid #fff;
 }
 
 .slide2 {
@@ -251,3 +260,20 @@
 }
 
 /* Header End */
+
+/* ---------- =================================================================================================== ---------- */
+
+/* Why Choose Us Start */
+
+.home-choose-sec-image img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Why Choose Us End */
+
+/* ---------- =================================================================================================== ---------- */
+
+/* ---------- ========== Homepage End ========== ---------- */
+
+/* ---------- =================================================================================================== ---------- */
