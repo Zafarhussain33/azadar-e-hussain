@@ -1,66 +1,86 @@
 @import url(../Roboto/Roboto-Regular.ttf);
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.home-welcome-text button{
+  background-color: #f87307;
+  color: white;
+  border: 2px solid #f87307;
+  padding: 10px 40px;
+  font-size: 17px;
+  border-radius: 50px;
+  text-align: center;
+  transition: 0.7s ease-in-out;
+}
+
+.home-welcome-text button:hover{
+  background: transparent;
+  color: #f87307;
 }
 
 /* Tollbar Start */
 
-.tollbar{
-    background-color: #f87307;
-    padding: 10px 0px;
+.tollbar {
+  background-color: #f87307;
+  padding: 10px 0px;
 }
 
-.toolbar-left{
-    display: flex;
-    margin: 0px;
+.toolbar-left {
+  display: flex;
+  margin: 0px;
 }
 
-.toolbar-left li{
-    list-style: none;
-    margin: 0px 20px 0px 0px;
+.toolbar-left li {
+  list-style: none;
+  margin: 0px 20px 0px 0px;
 }
 
-.toolbar-left li a{
-    text-decoration: none;
-    color: white;
+.toolbar-left li a {
+  text-decoration: none;
+  color: white;
 }
 
-.toolbar-right-main{
-    justify-content: right;
+.toolbar-right-main {
+  justify-content: right;
 }
 
-.toolbar-right{
-    display: flex;
-    margin: 0px;
+.toolbar-right {
+  display: flex;
+  margin: 0px;
 }
 
-.toolbar-right li{
-    list-style: none;
-    margin: 0px 20px 0px 0px;
+.toolbar-right li {
+  list-style: none;
+  margin: 0px 20px 0px 0px;
 }
 
-.toolbar-right li a{
-    text-decoration: none;
-    color: white;
+.toolbar-right li a {
+  text-decoration: none;
+  color: white;
 }
 
-.toolbar-right-btn{
-    display: flex;
-    color: white;
-    margin: 0px;
+.toolbar-right-btn {
+  display: flex;
+  color: white;
+  margin: 0px;
 }
 
-.toolbar-right-btn li{
-    list-style: none;
-    margin: 0px 10px 0px 10px;
+.toolbar-right-btn li {
+  list-style: none;
+  margin: 0px 10px 0px 10px;
 }
 
-.toolbar-right-btn li a{
-    text-decoration: none;
-    color: white;
+.toolbar-right-btn li a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Tollbar End */
@@ -69,27 +89,27 @@
 
 /* Navbar Start */
 
-.navbar-collapse{
-    justify-content: right;
+.navbar-collapse {
+  justify-content: right;
 }
 
-.navbar-nav{
-    padding-top: 20px;
+.navbar-nav {
+  padding-top: 20px;
 }
 
-.navbar-nav .nav-item{
-    margin: 0px 0px 0px 30px;
+.navbar-nav .nav-item {
+  margin: 0px 0px 0px 30px;
 }
 
-.navbar-nav .nav-item .nav-link{
-    color: gray;
-    font-size: 17px;
-    transition: 0.5s ease-in-out;
+.navbar-nav .nav-item .nav-link {
+  color: gray;
+  font-size: 17px;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar-nav .nav-item .nav-link:hover,
-.navbar-nav .nav-item .nav-link span{
-    color: #f87307;
+.navbar-nav .nav-item .nav-link span {
+  color: #f87307;
 }
 
 /* Navbar End */
@@ -191,72 +211,84 @@
 }
 
 .slide1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/slider/slider-1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/slider/slider-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
   position: relative;
-  padding: 150px 0px 0px 0px;
-}
-
-.z-home-slider-left p {
-  font-size: 18px;
-  color: white;
-  font-weight: 100;
-  font-family: sans-serif !important;
-  letter-spacing: 1px;
-  margin: 17px 0px;
-}
-
-.z-home-slider-left h1 {
-  color: white;
-  font-size: 50px;
-  font-weight: 200;
-  margin-bottom: 10px;
-  left: 18%;
-  right: 18%;
-  font-family: 'Inter' !important;
-}
-
-.z-home-slider-left a {
-  text-decoration: none;
-}
-
-.z-home-slider-left a .z-learn-btn {
-  border: 1px solid transparent;
-  background: #f87307;
-  color: white;
-  padding: 10px 40px;
-  border-radius: 50px;
-  font-family: Arial, Helvetica, sans-serif !important;
-  margin: 10px 10px 0px 0px;
-  transition: 0.8s ease-in-out;
-}
-
-.z-home-slider-left a .z-learn-btn:hover{
-  background: transparent;
-  border: 1px solid #fff;
+  text-align: center;
+  padding: 180px 0px 150px 0px;
 }
 
 .slide2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/slider/slider-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  padding: 230px 0px;
-}
-
-.slide3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/slider/slider-3.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/slider/slider-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  padding: 230px 0px;
+  text-align: center;
+  padding: 180px 0px 150px 0px;
+}
+
+.slide3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/slider/slider-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 180px 0px 150px 0px;
+}
+
+.home-header img{
+  width: 25%;
+}
+
+.home-header .image-2{
+  width: 30%;
+}
+
+.home-header h3{
+  color: white;
+  font-size: 25px;
+}
+
+.home-header h1{
+  color: white;
+  margin-top: 2%;
+  line-height: 1.2;
+  font-size: 48px;
+  font-weight: 500;
+  font-family: sans-serif !important;
+}
+
+.home-header p{
+  color: white;
+  font-family: sans-serif !important;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 100 !important;
+  margin: 20px 0px 30px;
+}
+
+.home-join-form a button,
+.home-header button{
+  background-color: #f87307;
+  color: white;
+  border: 2px solid #f87307;
+  padding: 10px 40px;
+  font-size: 17px;
+  border-radius: 50px;
+  text-align: center;
+  transition: 0.7s ease-in-out;
+}
+
+.home-join-form a button:hover,
+.home-header button:hover{
+  background: transparent;
+  border: 2px solid white;
 }
 
 /* Header End */
@@ -265,12 +297,72 @@
 
 /* Why Choose Us Start */
 
-.home-choose-sec-image img{
+.home-welcome-image img {
   width: 100%;
   height: 100%;
+  border-radius: 15px;
+}
+
+.home-welcome-text strong{
+  color: #f87307;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 2.5;
+}
+
+.home-welcome-text{
+  display: flex;
+  align-items: center;
+}
+
+.home-welcome-text h2{
+  font-size: 30px;
+  font-weight: 500 !important;
+}
+
+.home-welcome-text p{
+  color: gray;
+  font-size: 17px;
 }
 
 /* Why Choose Us End */
+
+/* ---------- =================================================================================================== ---------- */
+
+/* Join Start */
+
+.home-join{
+  display: flex;
+  align-items: center;
+}
+
+.home-join h2,
+.home-join p span {
+  color: #f87307;
+}
+
+.home-join p{
+  color: rgb(105, 105, 105);
+}
+
+.home-join-form{
+  background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(../images/home/join-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 50px;
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.home-join-form a,
+.home-join-form a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+/* Join End */
 
 /* ---------- =================================================================================================== ---------- */
 
